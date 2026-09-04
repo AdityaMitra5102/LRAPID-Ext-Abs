@@ -75,8 +75,6 @@ The study evaluated four distinct perturbation strategies against two adversary 
 
 XOR 64-bit is the most advantageous perturbation technique among the methods evaluated. Its computational efficiency is high (can add real timing/cycle comparison), requiring only a single CPU instruction per value, and it allows for deterministic data reconstruction without the need to store a seed. Furthermore, the massive keyspace makes brute-force recovery attempts impractical.Gaussian and Laplacian perturbation also achieved full reversibility and comparable privacy protection, but both rely on a single shared seed for both encryption and decryption, a smaller and less formally characterized secret space than XOR-64’s explicit key and should be paired with stronger seed management practices before production use. The uniformity of low attack accuracy seen by each method suggests that what is necessary to achieve secure communication is not a particular method of perturbation, but, in general, to eradicate the statistical structure of the transmitted signal, in whatever form, or by whichever of the introduced methods. Gaussian noise masking should be used only for initial feasibility analysis, as its additive nature and inherent predictability make it highly sensitive to statistical analysis. The 16-bit XOR is suitable for environments with highly constrained computational resources rather than for environments lacking key management.
 
-
-
 \section*{Acknowledgment}
 
 This research was conducted within the framework of the Erasmus Mundus Joint Master’s Programme in Applied Cybersecurity (CyberMACS) — Project No. 101082683, co-funded by the European Union under the Erasmus+ MUNDUS Programme.
