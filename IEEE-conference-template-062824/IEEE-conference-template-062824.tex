@@ -69,7 +69,7 @@ IIoT equipment produces valuable operational telemetry data, the capture of whic
 
 \section{Methodology}
 
-We used the Modbus telemetry subset of the publicly available ToN IoT dataset \cite[dataset], comprising 31,106 samples, labeled as normal 15,000 (48 \%) and attack 16,106 (52 \%) across five attack categories: Injection, Backdoor, scanning, XSS, and Password. The four Modbus function-code registers (FC1-FC4) are stationary, with low variance ratios ranging from 0.56 to 0.58, indicating that the raw signal is information-rich and difficult to model externally.
+We used the Modbus telemetry subset of the publicly available ToN IoT dataset \cite{dataset], comprising 31,106 samples, labeled as normal 15,000 (48 \%) and attack 16,106 (52 \%) across five attack categories: Injection, Backdoor, scanning, XSS, and Password. The four Modbus function-code registers (FC1-FC4) are stationary, with low variance ratios ranging from 0.56 to 0.58, indicating that the raw signal is information-rich and difficult to model externally.
 
 The Random Forest Classifier achieved 98.47\% (weighted F1: 0.9847) on a binary detection of normal versus attack traffic, with 16 (of 3000) normal samples classified as attacks and 79 (of 3222) attack samples missed on the binary task. This provides evidence that the raw IIoT telemetry network has a highly exploitable discriminative structure in its features and simultaneously justifies privacy-preserving perturbation before transmission. 
 
